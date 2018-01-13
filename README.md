@@ -1,5 +1,152 @@
 # Introduction
 
+
 Python:
   - 工作坊目标和特点:
     - 让没有变成基础的人掌握Python3的语法，对计算机程序如何运行有初步、抽象的认识
+  - 预备知识:
+    - 什么是计算机程序:
+      - 长什么样:
+        - 机器语言:
+          - 直观感受：01串
+        - 高级语言:
+          - 直观感受：可读（至少能看懂几个英文单词……）夹杂一些符号
+          - learning by doing:
+            - 检索了解当今最常用的语言有哪些，看看它们长什么样，试着描述你对它们的第一印象
+      - 大家用来做什么:
+        - 最开始主要用来计算
+        - 后来有了许多其他功能，比如……
+    - 计算机程序如何工作:
+      - 计算机能做的最基本工作:
+        - 运算（运算器）
+        - 显示图像、声音（显卡、声卡）
+        - 存储数据、指令（存储器）
+        - 知道下一步执行什么（控制器）
+      - 编译与解释
+      - 高级语言高级在哪里
+  - 准备工作:
+    - 安装python3解释器
+    - 安装pip
+    - 选择一款ide并安装
+  - Start:
+    - 库与函数调用：前进与转弯:
+      - 什么是函数为什么需要函数
+      - 什么是库为什么需要库
+      - 如何调用python中的库:
+        - pip install
+        - 标准库与第三方库
+      - 参数、关键字参数
+      - 如何调用python中的函数
+      - learning by doing:
+        - 画一个正方形:
+          - turtle.fd, bk
+          - turtle.rt, lt
+        - 用goto画一个正方形:
+          - turtle.goto
+      - learning by thinking:
+        - 数学中的函数与编程中的函数
+    - 对象：海龟叠罗汉:
+      - 什么是对象
+      - 属性与方法
+      - 对象的类型
+      - 函数也是对象
+      - 库也是对象
+      - 构造一个turtle.Pen对象
+      - help()
+      - Python的“一切都是对象”与面向对象语言
+      - learning by reading:
+        - 面向对象vs面向过程，https://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming
+      - learning by doing:
+        - 创建多个海龟并让他们叠罗汉
+      - learning by thinking:
+        - 面向对象的好处
+    - 类型(I)：write:
+      - int，float，str，bool
+      - 如何判断类型
+      - 如何进行类型转换
+      - 基本类型的方法
+      - learning by doing:
+        - 在画布上打印出自己的名字:
+          - turtle.write
+    - 表达式、变量与赋值：三角形:
+      - 什么是表达式，表达式长什么样
+      - 什么是变量，变量有什么用
+      - 赋值
+      - +=, -=, ...
+      - python中有哪些运算符
+      - 优先级
+      - 运算符与函数(__add__, __mul__, ...)
+      - math库
+      - learning by reading:
+        - augmented assignment和普通的assignment的区别:
+          - https://docs.python.org/2/reference/simple_stmts.html#augmented-assignment-statements
+          - https://stackoverflow.com/questions/38113301/what-is-mean-in-python-and-why-should-i-use-it/
+      - learning by doing:
+        - 画一个边长为30、40、50的三角形
+    - 条件与循环：多边形:
+      - if，else，elif
+      - for循环
+      - while循环
+      - break，continue
+      - 保留字（关键字）
+      - 汇编中的j指令与条件、循环
+      - learning by reading:
+        - goto:
+          - https://stackoverflow.com/questions/18863309/the-equivalent-of-a-goto-in-python
+          - https://stackoverflow.com/questions/438844/is-there-a-label-goto-in-python
+        - do...while:
+          - https://stackoverflow.com/questions/37281553/python-why-there-is-no-do-while-loop-in-python
+        - 跳两层循环:
+          - https://www.zhihu.com/question/37076998
+          - https://stackoverflow.com/questions/189645/how-%20to-break-out-of-multiple-loops-in-python
+      - learning by doing:
+        - 画一个正N边形
+    - 定义函数：从多边形到圆:
+      - def，return
+      - learning by doing:
+        - 从正三角形到正36边形
+      - learning by thinking:
+        - 为什么正36边形（看起来）是个圆
+    - 递归调用：分形:
+      - learning by doing:
+        - 画分形图形
+    - 数据结构：钟:
+      - 什么是数据结构，有什么用
+      - list，dict的构造、基本操作
+      - 内置函数range，enumerate
+      - learning by doing:
+        - 画一个带1~12数字的钟盘(list)
+        - 画一个带汉字1~12的钟盘(dict)
+        - 画一个带1~N数字的钟盘
+        - 画一个带汉字1~N的钟盘
+      - learning by reading:
+        - 从list来看+=和+的区别，https://stackoverflow.com/questions/823561/what-does-mean-in-python/823878#823878
+    - 第一周总结：更多的内置函数、基本数据类型、运算符、标准库
+    - 类：行走的钟:
+      - 类、实例、实例化
+      - 继承
+      - 装饰器
+      - classmethod、staticmathod
+      - magic function __init__
+      - __name__，__dict__，__class__
+      - learning by doing:
+        - 画一个会走的钟
+    - 类的高级主题:
+      - iterator，generator
+      - 多继承，mro
+      - metaclass
+      - learning by reading:
+        - mro，http://python-history.blogspot.com/2010/06/method-resolution-order.html
+    - turtle库高级主题:
+      - shape，海龟形状
+      - onclick
+      - 屏幕调整
+    - 更多例子:
+      - https://github.com/python/cpython/tree/3.6/Lib/turtledemo
+      - Koch curves
+      - bytedesign
+      - 行星系统
+      - 天气预报
+      - 排序演示
+      - 迷宫
+      - 打砖块
